@@ -61,4 +61,4 @@ For more information about the Mamelodi Initiative, please reach out to us direc
 
 ---
 
-**Made with ❤️ for the Mamelodi Community**
+**Made for the Mamelodi Community**

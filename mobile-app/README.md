@@ -1,6 +1,6 @@
 # Mamelodi Initiative — Android
 
-Phase 1 foundation for the Work Integrated Learning 3B Android application.
+Android application.
 
 ## Stack
 - Kotlin

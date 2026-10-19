@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Mamelodi Initiative supports learners through education, mentorship and opportunities."
+    />
+    <title>Donate | Mamelodi Initiative</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body data-root="../" data-page="donate">
+    <div id="site-header"></div>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Support the mission</span>
+        <h1>Help create more learning opportunities.</h1>
+        <p class="lead">
+          Your support can help programmes offer learning resources, mentorship
+          and meaningful activities.
+        </p>
+      </div>
+    </section>
+    <main class="container">
+      <div class="split">
+        <div>
+          <h2>Every contribution matters.</h2>
+          <p>
+            Support can take different forms: financial contributions, learning
+            materials, volunteer time or professional skills. Contact the
+            organisation to confirm its current needs and official donation
+            process.
+          </p>
+          <ul class="check-list">
+            <li>Ask what resources are currently needed</li>
+            <li>Confirm official donation details before paying</li>
+            <li>Keep a record of any contribution</li>
+          </ul>
+          <div class="notice">
+            This website does not process payments. Do not enter card or banking
+            details here.
+          </div>
+        </div>
+        <form class="form-card" data-demo-form>
+          <h2>Donation interest</h2>
+          <p class="muted">
+            Use this form to indicate how you would like to support the
+            initiative.
+          </p>
+          <div class="field">
+            <label for="d-name">Full name</label
+            ><input id="d-name" name="name" required />
+          </div>
+          <div class="field">
+            <label for="d-email">Email address</label
+            ><input id="d-email" name="email" type="email" required />
+          </div>
+          <div class="field">
+            <label>How would you like to help?</label>
+            <div class="donation-options">
+              <label
+                ><input
+                  type="radio"
+                  name="support"
+                  value="financial"
+                  required
+                />Financial</label
+              ><label
+                ><input
+                  type="radio"
+                  name="support"
+                  value="resources"
+                />Resources</label
+              ><label
+                ><input type="radio" name="support" value="skills" />Skills /
+                time</label
+              >
+            </div>
+          </div>
+          <div class="field">
+            <label for="d-message">Message (optional)</label
+            ><textarea id="d-message" name="message"></textarea>
+          </div>
+          <div class="form-message" role="status"></div>
+          <button class="btn btn-primary" type="submit">Send interest</button>
+        </form>
+      </div>
+    </main>
+    <div id="site-footer"></div>
+    <script src="../assets/js/components.js" defer></script>
+  </body>
+</html>

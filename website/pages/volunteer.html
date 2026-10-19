@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Mamelodi Initiative supports learners through education, mentorship and opportunities."
+    />
+    <title>Volunteer | Mamelodi Initiative</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body data-root="../" data-page="volunteer">
+    <div id="site-header"></div>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Get involved</span>
+        <h1>Your time and skills can make a difference.</h1>
+        <p class="lead">
+          Volunteers can support learning, share skills and help create
+          opportunities for young people.
+        </p>
+      </div>
+    </section>
+    <main class="container">
+      <div class="split">
+        <div>
+          <h2>Ways to contribute</h2>
+          <ul class="check-list">
+            <li>Academic or study support</li>
+            <li>Mentoring and career conversations</li>
+            <li>Helping with events and activities</li>
+            <li>Digital, communications or administrative skills</li>
+          </ul>
+          <p class="muted">
+            Volunteer roles, screening requirements and availability must be
+            confirmed with the organisation.
+          </p>
+        </div>
+        <form class="form-card" data-demo-form novalidate>
+          <h2>Volunteer application</h2>
+          <p class="muted">
+            You need to be signed in to apply. Fields marked * are required.
+          </p>
+          <div class="field">
+            <label for="v-name">Full name *</label>
+            <input id="v-name" name="full_name" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="v-email">Email address *</label>
+            <input id="v-email" name="email" type="email" required autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="v-phone">Phone / WhatsApp number *</label>
+            <input id="v-phone" name="phone" type="tel" required autocomplete="tel" placeholder="+27 82 123 4567" />
+          </div>
+          <div class="field">
+            <label for="v-qualification">Highest qualification / university *</label>
+            <input id="v-qualification" name="qualification" required />
+          </div>
+          <div class="field">
+            <label for="v-field">Field of study / current occupation *</label>
+            <input id="v-field" name="field_of_study" required />
+          </div>
+          <div class="field">
+            <label for="v-programme">Preferred programme *</label>
+            <select id="v-programme" name="programme_preference" required>
+              <option value="">Choose one</option>
+              <option value="summer_jam">Summer Jam</option>
+              <option value="winter_jam">Winter Jam</option>
+              <option value="road_to_finals">Road to Finals</option>
+              <option value="ylc">Youth Leadership Council</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Subjects / skills you can help with * (choose at least one)</label>
+            <div class="donation-options">
+              <label><input type="checkbox" name="subjects" value="Mathematics" />Mathematics</label>
+              <label><input type="checkbox" name="subjects" value="Physical Sciences" />Physical Sciences</label>
+              <label><input type="checkbox" name="subjects" value="Life Sciences" />Life Sciences</label>
+              <label><input type="checkbox" name="subjects" value="English FAL" />English FAL</label>
+              <label><input type="checkbox" name="subjects" value="Coding / IT" />Coding / IT</label>
+              <label><input type="checkbox" name="subjects" value="Creative Arts" />Creative Arts</label>
+            </div>
+          </div>
+          <div class="field">
+            <label>General availability * (choose at least one)</label>
+            <div class="donation-options">
+              <label><input type="checkbox" name="availability" value="Saturday Mornings" />Saturday mornings</label>
+              <label><input type="checkbox" name="availability" value="School Holiday Camps" />School holiday camps</label>
+              <label><input type="checkbox" name="availability" value="Weekday Afternoons" />Weekday afternoons</label>
+            </div>
+          </div>
+          <div class="field">
+            <label for="v-message">Why would you like to volunteer? * (20 to 1000 characters)</label>
+            <textarea id="v-message" name="motivation" required minlength="20" maxlength="1000"></textarea>
+          </div>
+          <div class="field">
+            <label>
+              <input type="checkbox" name="consent_background_check" required />
+              I understand that background checks and reference checks may be done. *
+            </label>
+          </div>
+          <div class="form-message" role="status"></div>
+          <button class="btn btn-primary" type="submit">Submit application</button>
+        </form>
+      </div>
+    </main>
+    <div id="site-footer"></div>
+    <script src="../assets/js/components.js" defer></script>
+  </body>
+</html>

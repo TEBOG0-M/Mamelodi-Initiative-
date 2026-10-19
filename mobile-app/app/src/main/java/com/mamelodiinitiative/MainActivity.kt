@@ -1,4 +1,5 @@
 package com.mamelodiinitiative
+import com.mamelodiinitiative.auth.AuthGate
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -9,6 +10,12 @@ import com.mamelodiinitiative.ui.theme.MamelodiInitiativeTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent { MamelodiInitiativeTheme { AppNavigation() } }
+        setContent {
+            MamelodiInitiativeTheme {
+                AuthGate { onLogout ->
+                    AppNavigation(onLogout = onLogout)
+                }
+            }
+        }
     }
 }

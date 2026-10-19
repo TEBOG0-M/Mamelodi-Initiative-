@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "264918646014",
+    "project_id": "mamelodi-initiative-ngo",
+    "storage_bucket": "mamelodi-initiative-ngo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264918646014:android:aa4b233ea56b362f83f9af",
+        "android_client_info": {
+          "package_name": "com.mamelodiinitiative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264918646014-kd8h7jpnnnu5085cq8h1el6sieuqgdrf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfwKs-MHxPxgtqII9lLs4fyKSu-COpl_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264918646014-kd8h7jpnnnu5085cq8h1el6sieuqgdrf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,52 @@
+trigger:
+  branches:
+    include: [ main, develop ]
+
+pr:
+  branches:
+    include: [ main, develop ]
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  GRADLE_USER_HOME: $(Pipeline.Workspace)/.gradle
+
+steps:
+  - task: JavaToolInstaller@0
+    displayName: Use JDK 17
+    inputs:
+      versionSpec: '17'
+      jdkArchitectureOption: x64
+      jdkSourceOption: PreInstalled
+
+  - task: Cache@2
+    displayName: Cache Gradle dependencies
+    inputs:
+      key: 'gradle | "$(Agent.OS)" | **/*.gradle* | **/gradle-wrapper.properties'
+      restoreKeys: |
+        gradle | "$(Agent.OS)"
+      path: $(GRADLE_USER_HOME)
+
+  - script: |
+      chmod +x ./gradlew
+      ./gradlew --no-daemon assembleDebug testDebugUnitTest
+    displayName: Build Android app and run unit tests
+
+  - task: PublishBuildArtifacts@1
+    displayName: Publish debug APK
+    condition: succeeded()
+    inputs:
+      PathtoPublish: app/build/outputs/apk/debug
+      ArtifactName: android-debug-apk
+      publishLocation: Container
+
+  - task: PublishTestResults@2
+    displayName: Publish JUnit test results
+    condition: succeededOrFailed()
+    inputs:
+      testResultsFormat: JUnit
+      testResultsFiles: '**/build/test-results/testDebugUnitTest/*.xml'
+      searchFolder: $(System.DefaultWorkingDirectory)
+      mergeTestResults: true
+      failTaskOnFailedTests: true

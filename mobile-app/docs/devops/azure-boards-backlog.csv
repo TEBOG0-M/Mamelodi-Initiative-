@@ -1,0 +1,16 @@
+Work Item Type,Title,Description,Assigned To,State,Priority,Tags
+Epic,Task 2 delivery,Deliver and verify Android app and supporting system,,New,1,Task2
+User Story,Set up Azure DevOps,Create Azure Repos Boards and Pipelines; add group and lecturer,,New,1,DevOps
+Task,Create repository and branch workflow,Push source and document branch/commit conventions,,New,1,DevOps
+Task,Configure Android CI,Build debug APK and run unit tests on pushes and pull requests,,New,1,CI
+Task,Update README,Document setup architecture build and test steps,,New,1,Documentation
+User Story,Email registration and login,Implement Firebase email/password authentication and validation,,New,1,Authentication
+Task,Verify Firebase configuration,Verify package config and auth using Firebase Console,,New,1,Firebase
+User Story,Complete core screens,Implement Home Programmes Volunteer News and More,,New,1,Android
+Task,Validate user inputs,Handle invalid and missing input without crashing,,New,1,Validation
+User Story,Implement API and relational database,Create required API and database tables and connect app,,New,1,API;Database
+Task,Seed database,Insert at least 10 records per applicable table,,New,1,Database
+Task,Add automated tests,Test form validation and core logic,,New,1,Testing
+Task,Physical-device acceptance,Verify primary flows on an Android phone,,New,1,DeviceTesting
+Task,Create help and user documentation,Document setup and app usage,,New,2,Documentation
+Task,Record final demo,Show app on phone and genuine auth API database and DevOps evidence,,New,1,Demo

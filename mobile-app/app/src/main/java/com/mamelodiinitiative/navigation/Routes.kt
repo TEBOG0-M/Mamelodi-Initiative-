@@ -6,6 +6,7 @@ object Routes {
     const val PROGRAMME_DETAIL = "programme_detail/{programmeId}"
     const val VOLUNTEER = "volunteer"
     const val VOLUNTEER_FORM = "volunteer_form"
+    const val VOLUNTEER_REVIEW = "volunteer_review"
     const val VOLUNTEER_SUCCESS = "volunteer_success"
     const val NEWS = "news"
     const val NEWS_DETAIL = "news_detail/{newsId}"

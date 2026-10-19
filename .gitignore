@@ -1,0 +1,10 @@
+node_modules/
+vendor/
+.env
+*.log
+.DS_Store
+mobile-app/app/google-services.json
+mobile-app/local.properties
+mobile-app/.gradle/
+mobile-app/build/
+mobile-app/app/build/

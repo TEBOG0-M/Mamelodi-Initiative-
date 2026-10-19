@@ -1,60 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Mamelodi Initiative - Contact Us</title>
-  <link rel="stylesheet" href="../assets/style.css">
-</head>
-<body>
-  <header>
-    <a href="../index.html" class="logo">Mamelodi Initiative</a>
-    <nav>
-      <a href="../index.html">Home</a>
-      <a href="programmes.html">Programmes</a>
-      <a href="about.html">About Us</a>
-      <a href="news.html">News</a>
-      <a href="contact.html" class="active">Contact Us</a>
-    </nav>
-    <a href="contact.html" class="btn-donate">Donate Now</a>
-  </header>
-
-  <main class="container">
-    <h1>Get in Touch</h1>
-    <p style="color: var(--text-muted); margin-bottom: 2rem;">Whether you have a question about our programmes or want to volunteer, we're here to help.</p>
-
-    <div class="grid-2">
-      <form class="contact-form card" action="#" method="post">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your Name">
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your Email">
-
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" placeholder="Subject">
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
-
-        <button type="submit" class="btn-donate" style="border:none; cursor:pointer;">Send Message</button>
-      </form>
-
-      <div>
-        <div class="card" style="margin-bottom: 1rem;">
-          <h3>Email Us</h3>
-          <p>info@mamelodi.org</p>
-          <h3>WhatsApp</h3>
-          <p>+27 82 123 4567</p>
-          <h3>Visit Us</h3>
-          <p>123 Mamelodi West, Pretoria, 0122, South Africa</p>
-        </div>
-        <img src="https://picsum.photos/seed/mamelodimap/500/250" alt="Map Location" style="width: 100%; border-radius: 8px;">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Mamelodi Initiative supports learners through education, mentorship and opportunities."
+    />
+    <title>Contact Us | Mamelodi Initiative</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body data-root="../" data-page="contact">
+    <div id="site-header"></div>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Contact us</span>
+        <h1>Let’s start a conversation.</h1>
+        <p class="lead">
+          Have a question about programmes, volunteering or supporting the
+          initiative? Send an enquiry.
+        </p>
       </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="footer-bottom">&copy; 2026 Mamelodi Initiative. All rights reserved.</div>
-  </footer>
-</body>
+    </section>
+    <main class="container">
+      <div class="split">
+        <form class="form-card" data-demo-form>
+          <h2>Send an enquiry</h2>
+          <div class="form-grid">
+            <div class="field">
+              <label for="c-name">Full name</label
+              ><input id="c-name" name="name" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="c-email">Email address</label
+              ><input
+                id="c-email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label for="c-subject">What is your enquiry about?</label
+            ><select id="c-subject" name="subject" required>
+              <option value="">Choose a topic</option>
+              <option>Programmes</option>
+              <option>Volunteering</option>
+              <option>Donations</option>
+              <option>General question</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="c-message">Message</label
+            ><textarea id="c-message" name="message" required></textarea>
+          </div>
+          <div class="form-message" role="status"></div>
+          <button class="btn btn-primary" type="submit">Send enquiry</button>
+          <p class="form-note" style="margin-top: 0.8rem">
+            This demonstration form does not send or store your message yet.
+          </p>
+        </form>
+        <div>
+          <div class="card">
+            <span class="eyebrow">We’d like to hear from you</span>
+            <h2>Contact details</h2>
+            <p>
+              For this student demonstration, official contact information needs
+              to be confirmed before publication.
+            </p>
+            <p><strong>Email:</strong> Confirm with the organisation</p>
+            <p><strong>Location:</strong> Mamelodi, Pretoria, South Africa</p>
+            <p><strong>Social channels:</strong> Add verified official links</p>
+          </div>
+          <div class="notice" style="margin-top: 1rem">
+            Do not publish placeholder phone numbers or email addresses as if
+            they were official.
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="site-footer"></div>
+    <script src="../assets/js/components.js" defer></script>
+  </body>
 </html>

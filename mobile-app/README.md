@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mamelodi Initiative — Android Application
 
 A community-focused mobile application for the Mamelodi Initiative, designed to facilitate youth engagement, volunteer coordination, and organizational transparency. Built using modern Android development practices with Kotlin, Jetpack Compose, and Firebase.
@@ -40,3 +41,10 @@ For build artifacts, run:
 ## Development State
 
 Current implementation includes full front-end journeys and Firebase integration. Volunteer applications are successfully persisted to Firestore. Future milestones include expanding the backend REST API integration for dynamic programme and news management.
+=======
+# mobile-app
+
+This folder is a placeholder for the mobile app for the Mamelodi Initiative project.
+
+Add your mobile app code here (e.g., Android, iOS, React Native, Flutter).
+>>>>>>> origin/main

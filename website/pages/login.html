@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Mamelodi Initiative supports learners through education, mentorship and opportunities."
+    />
+    <title>Sign In | Mamelodi Initiative</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body data-root="../" data-page="login">
+    <div id="site-header"></div>
+    <main class="auth-wrap">
+      <section class="auth-card">
+        <span class="eyebrow">Welcome back</span>
+        <h1>Sign in</h1>
+        <p class="muted">Access your Mamelodi Initiative account.</p>
+        <form data-auth-form>
+          <div class="field">
+            <label for="email">Email address</label
+            ><input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="password">Password</label
+            ><input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+              minlength="6"
+            />
+          </div>
+          <div style="text-align: right; margin: -0.3rem 0 1rem">
+            <a href="forgot-password.html">Forgot password?</a>
+          </div>
+          <div class="form-message" role="status"></div>
+          <button class="btn btn-primary" type="submit" style="width: 100%">
+            Sign in
+          </button>
+                    <p class="form-note text-center" style="margin: 1rem 0 0.6rem">or</p>
+          <button class="btn btn-secondary" type="button" data-google style="width: 100%">
+            Continue with Google
+          </button>
+        </form>
+        <p class="text-center" style="margin-top: 1.2rem">
+          New here? <a href="register.html">Create an account</a>
+        </p>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="../assets/js/components.js" defer></script>
+  </body>
+</html>

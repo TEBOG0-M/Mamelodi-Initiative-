@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Mamelodi Initiative supports learners through education, mentorship and opportunities."
+    />
+    <title>My Account | Mamelodi Initiative</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body data-root="../" data-page="my-account">
+    <div id="site-header"></div>
+        <main class="auth-wrap">
+      <section class="auth-card" style="width: min(640px, 100%)">
+        <span class="eyebrow">Your space</span>
+        <h1>My account</h1>
+
+        <div id="account-signed-out">
+          <p class="muted">Checking your sign-in status...</p>
+        </div>
+
+        <div id="account-details" hidden>
+          <div class="card">
+            <h3>Your details</h3>
+            <p><strong>Name:</strong> <span id="account-name"></span></p>
+            <p><strong>Email:</strong> <span id="account-email"></span></p>
+            <p><strong>Signed in with:</strong> <span id="account-method"></span></p>
+            <div class="form-message" id="account-note" role="status"></div>
+            <div class="form-actions">
+              <button class="btn btn-secondary" type="button" id="account-reset">
+                Email me a password reset link
+              </button>
+              <button class="btn btn-primary" type="button" id="account-signout">
+                Sign out
+              </button>
+            </div>
+          </div>
+
+          <h2 style="margin-top: 1.6rem">My volunteer applications</h2>
+          <div id="applications"></div>
+          <p style="margin-top: 1rem">
+            <a href="volunteer.html">Apply to volunteer</a>
+          </p>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="../assets/js/components.js" defer></script>
+  </body>
+</html>

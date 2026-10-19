@@ -1,0 +1,38 @@
+trigger:
+  branches:
+    include:
+      - main
+      - master
+
+pool:
+  vmImage: ubuntu-latest
+
+jobs:
+  - job: Website
+    displayName: Website link check
+    steps:
+      - task: NodeTool@0
+        inputs:
+          versionSpec: '20.x'
+      - script: node tools/check-site.mjs
+        displayName: Check website pages and links
+
+  - job: Api
+    displayName: API unit tests
+    steps:
+      - script: |
+          cd api
+          composer install --no-interaction --prefer-dist
+          composer test
+        displayName: Install PHP packages and run PHPUnit
+
+  - job: Android
+    displayName: Android build
+    continueOnError: true
+    steps:
+      - script: |
+          cd mobile-app
+          chmod +x gradlew
+          export JAVA_HOME=$JAVA_HOME_17_X64
+          ./gradlew assembleDebug testDebugUnitTest --no-daemon
+        displayName: Build debug APK and run unit tests
